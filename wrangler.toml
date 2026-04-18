@@ -1,0 +1,43 @@
+name = "knoqgen"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ── Custom Domain ──
+workers_dev = true
+routes = [
+  { pattern = "knoqgen.com", custom_domain = true },
+  { pattern = "www.knoqgen.com", custom_domain = true },
+  { pattern = "*.knoqgen.com/*", zone_name = "knoqgen.com" }
+]
+
+# ── Static Assets ──
+[assets]
+directory = "./public"
+
+# ── R2 Video Bucket ──
+[[r2_buckets]]
+binding = "VIDEO_BUCKET"
+bucket_name = "knoqgen-videos"
+
+# ── Scheduled cleanup (14-day video expiration) ──
+[triggers]
+crons = ["0 7 * * *"]  # 07:00 UTC daily (~midnight Pacific)
+
+# ── Environment Variables ──
+# Secrets (set with: wrangler secret put <NAME>):
+#   DATABASE_URL            - Neon connection string (pooled)
+#   RESEND_API_KEY          - Resend email API key
+#   STRIPE_SECRET_KEY       - Stripe API key (for billing)
+#   STRIPE_WEBHOOK_SECRET   - Stripe webhook signing secret
+#   CF_API_TOKEN            - Cloudflare API token (Zone:SSL/TLS edit, custom_hostnames)
+#   CF_ZONE_ID              - Cloudflare Zone ID for knoqgen.com
+#   ADMIN_PASSWORD          - legacy fallback (no longer used — kept to satisfy Env type)
+
+[vars]
+COMPANY_NAME = ""
+COMPANY_PHONE = ""
+COMPANY_TAGLINE = ""
+SITE_URL = "https://knoqgen.com"
+NOTIFY_EMAIL = ""
+CF_FALLBACK_ORIGIN = "knoqgen.com"

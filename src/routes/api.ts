@@ -388,8 +388,9 @@ api.post("/api/checkout", async (c) => {
   const orgId = s?.org?.id || "";
 
   const isAnnual = plan === "annual";
-  const basePriceId = isAnnual ? "price_1TKrxkJrZj3GjsZe9bxSJlht" : "price_1TKrxLJrZj3GjsZeAYepp5Vw";
-  const addonPriceId = isAnnual ? "price_1TKs70JrZj3GjsZeW4mQ1Lcp" : "price_1TKs63JrZj3GjsZeoe1DD0M4";
+  // Stripe Price IDs (updated 2026-04-21 for $199/mo, $1,990/yr, $40/rep/mo, $400/rep/yr)
+  const basePriceId = isAnnual ? "price_1TOnc3JrZj3GjsZe82zQi4LT" : "price_1TOnatJrZj3GjsZeZO9NpGgR";
+  const addonPriceId = isAnnual ? "price_1TOncSJrZj3GjsZeZg0Ip9VR" : "price_1TOnbRJrZj3GjsZeLsTtyq4m";
   const planLabel = isAnnual ? "Annual" : "Monthly";
   const repCount = Math.max(0, Math.min(50, parseInt(extra_reps) || 0));
 

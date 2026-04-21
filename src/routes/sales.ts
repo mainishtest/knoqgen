@@ -293,7 +293,7 @@ function salesPage(): string {
         </div>
         <div class="step3-num">1</div>
         <h3>Record a 30-Second Video</h3>
-        <p>Right at the door, on your phone. &ldquo;Hey &mdash; we're painting a house right around the corner&hellip;&rdquo;</p>
+        <p>Right at the door, on your phone. Use one of our 20 proven scripts &mdash; or your own. &ldquo;Hey &mdash; we're painting a house right around the corner&hellip;&rdquo;</p>
       </div>
       <div class="step3-arrow" aria-hidden="true">&rarr;</div>
       <div class="step3">
@@ -324,7 +324,27 @@ function salesPage(): string {
     <div style="text-align:center;margin-top:28px">
       <p class="section-text"><strong>Your rep's already at the door. This adds 60 seconds and turns a dead knock into a live lead.</strong></p>
       <a href="#pricing" class="btn-cta" style="margin-top:12px">Start Using KnoqGen &rarr;</a>
+      <p style="margin-top:10px;font-size:14px;color:#666">Includes 20 proven video scripts your reps can use immediately.</p>
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SCRIPT VAULT (bonus offer) -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section" style="background:#f8f9fa" id="scripts">
+  <div class="container">
+    <h2 style="text-align:center">Your Reps Will Know Exactly What to Say</h2>
+    <p class="section-sub" style="text-align:center;max-width:560px;margin:0 auto 20px">KnoqGen doesn't just give you the tool &mdash; we give your reps the words.</p>
+
+    <ul class="check-list">
+      <li><strong>20 proven video scripts</strong> included with every plan</li>
+      <li>Designed to increase scans and responses</li>
+      <li>Easy to customize for your service and offer</li>
+      <li>No more awkward or unsure reps</li>
+    </ul>
+
+    <p class="section-text callout" style="margin-top:24px;text-align:center"><strong>Just hit record, follow the script, and move to the next door.</strong></p>
   </div>
 </section>
 

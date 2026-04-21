@@ -16,13 +16,13 @@ checkout.get("/checkout/success", (c) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to KnoqGen!</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:#f5f7fa;color:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    body{font-family:'Heebo',sans-serif;background:#f5f7fa;color:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
     .card{background:#fff;border-radius:16px;padding:48px 32px;max-width:480px;width:100%;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.08)}
     .check{width:64px;height:64px;background:#e8f5e9;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
     h1{font-size:24px;font-weight:800;margin-bottom:8px;color:#2e7d32}
@@ -30,11 +30,11 @@ checkout.get("/checkout/success", (c) => {
     .steps{text-align:left;margin:24px 0;background:#f8f9fa;border-radius:12px;padding:20px}
     .step{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #eee}
     .step:last-child{border-bottom:none}
-    .step-n{width:28px;height:28px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
+    .step-n{width:28px;height:28px;background:#8145FC;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
     .step strong{font-size:14px;display:block;margin-bottom:2px}
     .step p{font-size:13px;color:#888;margin:0}
-    .btn{display:inline-block;padding:14px 32px;background:#007bff;color:#fff;font-size:16px;font-weight:700;border-radius:8px;text-decoration:none;margin-top:20px}
-    .btn:hover{background:#0069d9}
+    .btn{display:inline-block;padding:14px 32px;background:#8145FC;color:#fff;font-size:16px;font-weight:700;border-radius:8px;text-decoration:none;margin-top:20px}
+    .btn:hover{background:#391991}
     .sub{font-size:13px;color:#aaa;margin-top:12px}
   </style>
 </head>
@@ -96,10 +96,10 @@ function checkoutPage(): string {
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://knoqgen.com/og-card.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>${CHECKOUT_CSS}</style>
 </head>
 <body>
@@ -107,7 +107,7 @@ function checkoutPage(): string {
 <!-- ═══ HEADER ═══ -->
 <header class="ch-header">
   <div class="ch-container">
-    <a href="/sell" class="ch-logo" style="display:flex;align-items:center"><img src="/api/video/static/logo.png" alt="KnoqGen" style="height:36px;width:auto"></a>
+    <a href="/sell" class="ch-logo" style="display:flex;align-items:center"><img src="/logo.png" alt="KnoqGen" style="height:36px;width:auto"></a>
     <div class="ch-secure">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       Secure Checkout
@@ -479,7 +479,7 @@ function checkoutPage(): string {
 
 const CHECKOUT_CSS = `
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;background:#f5f7fa;-webkit-font-smoothing:antialiased}
+body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;background:#f5f7fa;-webkit-font-smoothing:antialiased}
 .ch-container{max-width:960px;margin:0 auto;padding:0 20px}
 
 /* ── Header ── */
@@ -505,16 +505,16 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* ── Plan cards ── */
 .plan-options{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
 .plan-card{position:relative;border:2px solid #e5e7eb;border-radius:10px;padding:16px;cursor:pointer;transition:border-color .15s}
-.plan-card:hover{border-color:#007bff}
-.plan-card.selected{border-color:#007bff;background:#f0f7ff}
+.plan-card:hover{border-color:#8145FC}
+.plan-card.selected{border-color:#8145FC;background:#f0f7ff}
 .plan-card-best{padding-top:28px}
-.plan-badge{position:absolute;top:-1px;left:16px;background:#007bff;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:0 0 6px 6px;text-transform:uppercase;letter-spacing:.5px}
+.plan-badge{position:absolute;top:-1px;left:16px;background:#8145FC;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:0 0 6px 6px;text-transform:uppercase;letter-spacing:.5px}
 .plan-card input[type="radio"]{display:none}
 .plan-top{display:flex;justify-content:space-between;align-items:baseline}
 .plan-name{font-size:16px;font-weight:700}
 .plan-price{font-size:24px;font-weight:800}
 .plan-price span{font-size:14px;font-weight:500;color:#888}
-.plan-detail{font-size:13px;color:#007bff;font-weight:600;margin-top:4px}
+.plan-detail{font-size:13px;color:#8145FC;font-weight:600;margin-top:4px}
 .plan-card:not(.plan-card-best) .plan-detail{color:#888}
 .plan-includes{font-size:12px;color:#aaa;margin-top:6px}
 
@@ -524,23 +524,23 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .addon-sub{font-size:12px;color:#888;margin-top:2px}
 .addon-stepper{display:flex;align-items:center;gap:8px}
 .stepper-btn{width:32px;height:32px;border:1.5px solid #ddd;border-radius:8px;background:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#333}
-.stepper-btn:hover{border-color:#007bff;color:#007bff}
+.stepper-btn:hover{border-color:#8145FC;color:#8145FC}
 .stepper-val{font-size:17px;font-weight:700;min-width:20px;text-align:center}
 
 /* ── Form fields ── */
 .field{margin-bottom:14px}
 .field label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:4px}
-.field input{width:100%;padding:11px 12px;font-size:16px;font-family:'Inter',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
-.field input:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.1)}
+.field input{width:100%;padding:11px 12px;font-size:16px;font-family:'Heebo',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
+.field input:focus{outline:none;border-color:#8145FC;box-shadow:0 0 0 3px rgba(129,69,252,.1)}
 .field-hint{font-size:12px;color:#aaa;margin-top:3px;display:block}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .optional{color:#aaa;font-weight:400}
 .payment-secure-note{font-size:12px;color:#2e7d32;display:flex;align-items:center;gap:6px;margin-bottom:16px;background:#f0fdf4;padding:10px 12px;border-radius:8px}
 
 /* ── Checkout button ── */
-.btn-checkout{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:16px;background:#007bff;color:#fff;font-size:17px;font-weight:700;font-family:'Inter',sans-serif;border:none;border-radius:8px;cursor:pointer;transition:background .2s;margin-top:4px}
-.btn-checkout:hover{background:#0069d9}
-.btn-checkout:disabled{background:#80bdff;cursor:not-allowed}
+.btn-checkout{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:16px;background:#8145FC;color:#fff;font-size:17px;font-weight:700;font-family:'Heebo',sans-serif;border:none;border-radius:8px;cursor:pointer;transition:background .2s;margin-top:4px}
+.btn-checkout:hover{background:#391991}
+.btn-checkout:disabled{background:#C6ADFF;cursor:not-allowed}
 .btn-checkout #btnPrice{font-weight:500;opacity:.8}
 .post-btn-trust{text-align:center;margin-top:12px;font-size:13px;color:#888;line-height:1.5}
 
@@ -550,7 +550,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .summary-line{display:flex;justify-content:space-between;padding:6px 0;font-size:14px;color:#555}
 .summary-line strong{color:#1a1a1a}
 .summary-total{font-size:17px;padding:10px 0 0;color:#1a1a1a}
-.summary-total strong{font-size:20px;color:#007bff}
+.summary-total strong{font-size:20px;color:#8145FC}
 .summary-divider{height:1px;background:#eee;margin:8px 0}
 .summary-includes{margin-top:16px;padding-top:16px;border-top:1px solid #eee}
 .summary-inc-title{font-size:12px;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
@@ -588,7 +588,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:600px){.next-grid{grid-template-columns:1fr}}
 .next-item{background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;gap:12px;text-align:left}
-.next-num{width:28px;height:28px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;flex-shrink:0}
+.next-num{width:28px;height:28px;background:#8145FC;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;flex-shrink:0}
 .next-item strong{font-size:14px;display:block;margin-bottom:2px}
 .next-item p{font-size:13px;color:#888;line-height:1.4}
 

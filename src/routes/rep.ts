@@ -134,11 +134,11 @@ rep.get("/rep", async (c) => {
     </div>
 
     <style>
-    .fab{position:fixed;bottom:20px;right:20px;background:#007bff;color:#fff;padding:14px 24px;border-radius:40px;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 4px 16px rgba(0,123,255,.35);z-index:100}
+    .fab{position:fixed;bottom:20px;right:20px;background:#8145FC;color:#fff;padding:14px 24px;border-radius:40px;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 4px 16px rgba(129,69,252,.35);z-index:100}
     .rep-greeting h1{font-size:22px}
     .rep-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 8px}
     .rep-stat{background:#fff;border-radius:12px;padding:16px 12px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-    .rep-stat-num{font-family:'Montserrat',sans-serif;font-size:32px;font-weight:800;color:#007bff}
+    .rep-stat-num{font-family:'Montserrat',sans-serif;font-size:32px;font-weight:800;color:#8145FC}
     .rep-stat-label{font-size:12px;color:#888;margin-top:2px}
     .rep-alltime{text-align:center;font-size:13px;color:#aaa;margin-bottom:20px}
     .rep-section{margin-bottom:20px}
@@ -148,12 +148,12 @@ rep.get("/rep", async (c) => {
     .rep-lead-list{display:flex;flex-direction:column;gap:8px}
     .rep-lead-card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.06);border-left:3px solid #c62828}
     .rep-lead-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
-    .rep-lead-phone{color:#007bff;font-weight:600;font-size:15px;text-decoration:none;display:block}
+    .rep-lead-phone{color:#8145FC;font-weight:600;font-size:15px;text-decoration:none;display:block}
     .rep-page-list{display:flex;flex-direction:column;gap:6px}
     .rep-page-row{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:10px;padding:12px 14px;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.06)}
     .rep-page-row strong{font-size:14px;color:#1a1a1a;display:block}
     .rep-page-stats{display:flex;gap:12px;font-size:13px;color:#888}
-    .rep-page-leads{color:#007bff;font-weight:600}
+    .rep-page-leads{color:#8145FC;font-weight:600}
     .rep-empty{text-align:center;background:#fff;border-radius:12px;padding:32px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);color:#888}
     .container{padding-bottom:80px}
     </style>
@@ -331,7 +331,7 @@ rep.get("/rep/print/:slug", async (c) => {
 .url{font-size:11px;color:#999;margin-top:16px}
 .btns{position:fixed;top:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
 .btns button,.btns a{padding:10px 20px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;border:none}
-.bp{background:#007bff;color:#fff}.bb{background:#fff;color:#32373c;border:1.5px solid #32373c}
+.bp{background:#8145FC;color:#fff}.bb{background:#fff;color:#32373c;border:1.5px solid #32373c}
 @media print{body{background:#fff}.btns{display:none}.label{box-shadow:none}@page{size:4in 6in;margin:0}}</style></head>
 <body><div class="btns"><button class="bp" onclick="window.print()">Print</button><a href="/rep" class="bb">Back</a></div>
 <div class="label"><div class="lc">${esc(org.display_name)}</div><canvas id="q"></canvas><div class="cta">Scan for a Free Quote</div><div class="url">${esc(fullUrl)}</div></div>

@@ -91,20 +91,20 @@ function legalPage(title: string, body: string): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} — KnoqGen</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:#fff;color:#333;padding:40px 20px}
+    body{font-family:'Heebo',sans-serif;background:#fff;color:#333;padding:40px 20px}
     .legal{max-width:640px;margin:0 auto}
     .legal h1{font-size:28px;font-weight:800;margin-bottom:4px;color:#111}
     .legal h2{font-size:18px;font-weight:700;margin:28px 0 8px;color:#111}
     .legal p{font-size:15px;line-height:1.7;margin-bottom:12px;color:#555}
     .legal ul{margin:0 0 16px 20px;font-size:15px;line-height:1.7;color:#555}
-    .legal a{color:#007bff}
+    .legal a{color:#8145FC}
     .updated{font-size:14px;color:#aaa;margin-bottom:24px}
-    .back{display:inline-block;margin-bottom:24px;font-size:14px;color:#007bff;text-decoration:none}
+    .back{display:inline-block;margin-bottom:24px;font-size:14px;color:#8145FC;text-decoration:none}
   </style>
 </head>
 <body>
@@ -132,10 +132,10 @@ function salesPage(): string {
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://knoqgen.com/og-card.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>${SALES_CSS}</style>
 </head>
 <body>
@@ -143,7 +143,7 @@ function salesPage(): string {
 <!-- ═══ NAV ═══ -->
 <nav class="sales-nav">
   <div class="container" style="display:flex;justify-content:space-between;align-items:center">
-    <a href="/sell" style="display:flex;align-items:center;text-decoration:none"><img src="/api/video/static/logo.png" alt="KnoqGen" style="height:40px;width:auto"></a>
+    <a href="/sell" style="display:flex;align-items:center;text-decoration:none"><img src="/logo.png" alt="KnoqGen" style="height:40px;width:auto"></a>
     <a href="/login" class="nav-login">Log In</a>
   </div>
 </nav>
@@ -574,7 +574,7 @@ function salesPage(): string {
 <!-- ═══════════════════════════════════════════════════════ -->
 <footer class="sales-footer">
   <div class="container">
-    <img src="/api/video/static/logo.png" alt="KnoqGen" style="height:48px;width:auto;margin-bottom:8px">
+    <img src="/logo.png" alt="KnoqGen" style="height:48px;width:auto;margin-bottom:8px">
     <p>Turn missed doors into booked jobs.</p>
     <p style="margin-top:12px;font-size:14px"><a href="mailto:hello@knoqgen.com" style="color:rgba(255,255,255,.7)">hello@knoqgen.com</a></p>
     <div style="margin-top:12px;display:flex;gap:16px;justify-content:center;font-size:12px">
@@ -591,7 +591,7 @@ function salesPage(): string {
 
 const SALES_CSS = `
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;background:#fff}
+body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;background:#fff}
 .container{max-width:720px;margin:0 auto;padding:0 20px}
 
 /* ── Nav ── */
@@ -610,8 +610,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .hero-steps p{font-size:17px;color:#fff;padding:6px 0;font-weight:500}
 .hero-steps p:before{content:"\\1F449 ";margin-right:4px}
 .hero-buttons{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:24px}
-.btn-cta{display:inline-block;padding:16px 32px;background:#007bff;color:#fff;font-size:17px;font-weight:700;border-radius:8px;text-decoration:none;transition:background .2s}
-.btn-cta:hover{background:#0069d9}
+.btn-cta{display:inline-block;padding:16px 32px;background:#8145FC;color:#fff;font-size:17px;font-weight:700;border-radius:8px;text-decoration:none;transition:background .2s}
+.btn-cta:hover{background:#391991}
 .btn-cta-big{font-size:19px;padding:18px 40px}
 .btn-cta-outline{display:inline-block;padding:14px 28px;background:transparent;color:#fff;font-size:16px;font-weight:600;border:2px solid rgba(255,255,255,.3);border-radius:8px;text-decoration:none;transition:border-color .2s}
 .btn-cta-outline:hover{border-color:rgba(255,255,255,.6)}
@@ -625,7 +625,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* ── Sections ── */
 .section{padding:56px 0}
 .section-dark{background:#111;color:#fff}
-.section-blue{background:#007bff}
+.section-blue{background:#8145FC}
 .section h2{font-size:28px;font-weight:800;line-height:1.2;margin-bottom:16px;letter-spacing:-0.3px}
 @media(max-width:600px){.section h2{font-size:22px}}
 .section-sub{font-size:16px;color:#888;margin-bottom:32px}
@@ -668,7 +668,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* ── Steps ── */
 .steps{display:flex;flex-direction:column;gap:24px;margin-top:24px}
 .step{display:flex;gap:16px;align-items:flex-start}
-.step-num{width:40px;height:40px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;flex-shrink:0}
+.step-num{width:40px;height:40px;background:#8145FC;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;flex-shrink:0}
 .step h3{font-size:17px;font-weight:700;margin-bottom:4px;color:#1a1a1a}
 .step p{font-size:15px;color:#555;line-height:1.5}
 
@@ -699,8 +699,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
 @media(max-width:600px){.pricing-grid{grid-template-columns:1fr}}
 .price-card{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:16px;padding:28px;text-align:center}
-.price-card-best{background:rgba(0,123,255,.15);border-color:#007bff;position:relative;padding-top:36px}
-.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#007bff;color:#fff;font-size:13px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
+.price-card-best{background:rgba(129,69,252,.15);border-color:#8145FC;position:relative;padding-top:36px}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#8145FC;color:#fff;font-size:13px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
 .price-label{font-size:14px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
 .price-amount{font-size:48px;font-weight:900;color:#fff;margin-bottom:4px}
 .price-amount span{font-size:20px;font-weight:500;color:rgba(255,255,255,.5)}
@@ -710,8 +710,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .price-features li:before{content:"\\2713 ";color:#66bb6a;font-weight:700;margin-right:6px}
 .btn-price{display:block;padding:14px;background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s}
 .btn-price:hover{background:rgba(255,255,255,.15)}
-.btn-price-best{background:#007bff;border-color:#007bff}
-.btn-price-best:hover{background:#0069d9}
+.btn-price-best{background:#8145FC;border-color:#8145FC}
+.btn-price-best:hover{background:#391991}
 .price-note{font-size:12px;color:rgba(255,255,255,.35);margin-top:12px}
 .roi-box{background:rgba(255,255,255,.06);border-radius:12px;padding:24px;margin-top:32px;text-align:center;font-size:16px;color:rgba(255,255,255,.8);line-height:1.6}
 .roi-box strong{color:#fff}
@@ -733,8 +733,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .steps3{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:16px;align-items:start;margin-top:32px}
 @media(max-width:720px){.steps3{grid-template-columns:1fr;gap:12px}.step3-arrow{display:none}}
 .step3{background:#fff;border:1px solid #eee;border-radius:14px;padding:24px 20px 22px;text-align:center;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.step3-icon{display:inline-flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;background:#eaf3ff;color:#007bff;margin-bottom:12px}
-.step3-num{position:absolute;top:14px;right:14px;width:26px;height:26px;border-radius:50%;background:#007bff;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step3-icon{display:inline-flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;background:#eaf3ff;color:#8145FC;margin-bottom:12px}
+.step3-num{position:absolute;top:14px;right:14px;width:26px;height:26px;border-radius:50%;background:#8145FC;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
 .step3 h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:8px}
 .step3 p{font-size:14px;color:#555;line-height:1.5}
 .step3-arrow{color:#c7d5ea;font-size:28px;align-self:center;padding-top:30px}

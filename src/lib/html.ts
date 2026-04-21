@@ -1,10 +1,13 @@
 // Shared HTML layout helpers for server-rendered pages.
 // We inline all CSS to keep the Worker self-contained and fast.
-// Brand colors from knoqgen.com:
-//   Primary blue: #007bff
-//   Dark: #32373c
-//   Body text: #555, #333
-//   Fonts: Rubik (body), Montserrat (headings)
+// Brand colors (KnoqGen):
+//   Primary purple: #8145FC
+//   Deep purple:    #391991  (hover / darker accents)
+//   Accent pink:    #CC51E9
+//   Accent gold:    #E5C158
+//   Black:          #000000
+//   Body text:      #555, #333
+//   Fonts: Heebo (body), Montserrat (headings)
 
 export type OgMeta = {
   ogTitle?: string;
@@ -30,10 +33,10 @@ export function publicLayout(title: string, body: string, og?: OgMeta) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>${esc(title)}</title>${ogTags}
   <style>${PUBLIC_CSS}</style>
 </head>
@@ -61,10 +64,10 @@ export function adminLayout(title: string, body: string, opts: boolean | LayoutC
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>${esc(title)} — ${esc(brand)}</title>
   <style>${ADMIN_CSS}</style>
 </head>
@@ -119,12 +122,12 @@ export function esc(s: string): string {
 // ── Landing page CSS (mobile-first, brand-matched) ──
 const PUBLIC_CSS = `
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:#333;-webkit-font-smoothing:antialiased}
+body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:#333;-webkit-font-smoothing:antialiased}
 
 /* ── Branded header ── */
 .page-header{max-width:480px;margin:0 auto;padding:16px 20px 12px;display:flex;align-items:center;justify-content:space-between}
 .header-logo{height:36px;width:auto}
-.header-location{font-size:13px;color:#007bff;font-weight:600}
+.header-location{font-size:13px;color:#8145FC;font-weight:600}
 
 /* ── Hero / Video ── */
 .hero{position:relative;width:100%;max-width:480px;margin:0 auto}
@@ -136,7 +139,7 @@ body{font-family:'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 /* ── Headline ── */
 .hero-copy{padding:20px 20px 0}
-.hero-headline{font-family:'Montserrat','Rubik',sans-serif;font-size:24px;font-weight:700;color:#32373c;line-height:1.2;margin-bottom:8px}
+.hero-headline{font-family:'Montserrat','Heebo',sans-serif;font-size:24px;font-weight:700;color:#32373c;line-height:1.2;margin-bottom:8px}
 .hero-sub{font-size:16px;color:#555;line-height:1.5}
 .hero-sub strong{color:#32373c}
 .hero-cta{padding:16px 20px 0}
@@ -152,37 +155,37 @@ body{font-family:'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* ── Services ── */
 .services-section{max-width:480px;margin:0 auto;padding:0 20px 24px}
 .services-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.service-chip{background:#e8f4ff;border:1px solid #b8daff;border-radius:20px;padding:6px 14px;font-size:13px;color:#007bff;font-weight:500}
+.service-chip{background:#F0E8FF;border:1px solid #D6C5FF;border-radius:20px;padding:6px 14px;font-size:13px;color:#8145FC;font-weight:500}
 
 /* ── Content blocks ── */
 .content{padding:0 20px 24px;max-width:480px;margin:0 auto}
-.section-title{font-family:'Montserrat','Rubik',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#32373c}
+.section-title{font-family:'Montserrat','Heebo',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#32373c}
 .rep-note{font-size:15px;line-height:1.6;color:#555;font-style:italic}
 .rep-attribution{font-size:14px;color:#888;margin-top:6px;font-weight:500}
 
 /* ── Form ── */
 .cta-section{padding:20px;max-width:480px;margin:0 auto;background:#f8f9fa;border-radius:16px;margin-bottom:20px;margin-left:auto;margin-right:auto;max-width:calc(480px - 40px);margin-left:20px;margin-right:20px}
 @media(min-width:520px){.cta-section{margin-left:auto;margin-right:auto;max-width:440px}}
-.form-heading{font-family:'Montserrat','Rubik',sans-serif;font-size:22px;font-weight:700;color:#32373c;text-align:center;margin-bottom:4px}
+.form-heading{font-family:'Montserrat','Heebo',sans-serif;font-size:22px;font-weight:700;color:#32373c;text-align:center;margin-bottom:4px}
 .form-sub{font-size:14px;color:#888;text-align:center;margin-bottom:20px}
 .form-fine-print{font-size:12px;color:#aaa;text-align:center;margin-top:12px}
 .optional-label{color:#999;font-weight:400}
-.btn-primary{display:block;width:100%;padding:16px;background:#007bff;color:#fff;font-family:'Rubik',sans-serif;font-size:17px;font-weight:600;border:none;border-radius:8px;cursor:pointer;text-align:center;text-decoration:none;transition:background .2s}
-.btn-primary:hover{background:#0069d9}
-.btn-primary:disabled{background:#80bdff;cursor:not-allowed}
+.btn-primary{display:block;width:100%;padding:16px;background:#8145FC;color:#fff;font-family:'Heebo',sans-serif;font-size:17px;font-weight:600;border:none;border-radius:8px;cursor:pointer;text-align:center;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:#391991}
+.btn-primary:disabled{background:#C6ADFF;cursor:not-allowed}
 .btn-call{display:block;width:100%;padding:14px;margin-top:10px;background:#fff;color:#32373c;font-size:16px;font-weight:600;border:2px solid #32373c;border-radius:8px;text-align:center;text-decoration:none}
 .btn-call:hover{background:#f8f9fa}
 .form-group{margin-bottom:14px}
 .form-group label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
-.form-group input,.form-group textarea{width:100%;padding:12px;font-size:16px;font-family:'Rubik',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
+.form-group input,.form-group textarea{width:100%;padding:12px;font-size:16px;font-family:'Heebo',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
 .form-group textarea{resize:vertical;min-height:80px}
-.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#007bff;background:#fff;box-shadow:0 0 0 3px rgba(0,123,255,.1)}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#8145FC;background:#fff;box-shadow:0 0 0 3px rgba(129,69,252,.1)}
 .success-msg{background:#e8f5e9;border:1px solid #a5d6a7;border-radius:12px;padding:24px;text-align:center;color:#2e7d32}
-.success-msg h3{font-family:'Montserrat','Rubik',sans-serif;margin-bottom:8px;font-size:20px}
+.success-msg h3{font-family:'Montserrat','Heebo',sans-serif;margin-bottom:8px;font-size:20px}
 
 /* ── Misc ── */
 .expired{text-align:center;padding:60px 20px;color:#888}
-.expired h2{font-family:'Montserrat','Rubik',sans-serif;color:#32373c;margin-bottom:8px}
+.expired h2{font-family:'Montserrat','Heebo',sans-serif;color:#32373c;margin-bottom:8px}
 .photos-scroll{display:flex;gap:8px;padding:0 20px 8px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .photos-scroll img{width:200px;height:150px;object-fit:cover;border-radius:8px;flex-shrink:0}
 .company-footer{text-align:center;padding:24px 20px 40px;font-size:13px;color:#999;max-width:480px;margin:0 auto}
@@ -192,21 +195,21 @@ body{font-family:'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 // ── Admin / rep CSS (brand-matched) ──
 const ADMIN_CSS = `
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Rubik',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#333}
+body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#333}
 .admin-nav{background:#32373c;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.nav-brand{color:#fff;font-family:'Montserrat','Rubik',sans-serif;font-weight:700;font-size:17px;text-decoration:none}
+.nav-brand{color:#fff;font-family:'Montserrat','Heebo',sans-serif;font-weight:700;font-size:17px;text-decoration:none}
 .nav-links{display:flex;gap:16px}
 .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:14px;font-weight:500}
 .nav-links a:hover{color:#fff}
 .org-switcher select{background:#222;color:#fff;border:1px solid #555;border-radius:6px;padding:4px 8px;font-size:13px}
 .org-switcher{display:inline-block}
 .container{max-width:800px;margin:0 auto;padding:20px}
-h1{font-family:'Montserrat','Rubik',sans-serif;font-size:24px;margin-bottom:16px;color:#32373c}
-h2{font-family:'Montserrat','Rubik',sans-serif;font-size:20px;margin:24px 0 12px;color:#32373c}
+h1{font-family:'Montserrat','Heebo',sans-serif;font-size:24px;margin-bottom:16px;color:#32373c}
+h2{font-family:'Montserrat','Heebo',sans-serif;font-size:20px;margin:24px 0 12px;color:#32373c}
 .card{background:#fff;border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px}
 .stat-card{background:#fff;border-radius:12px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.stat-card .number{font-family:'Montserrat','Rubik',sans-serif;font-size:32px;font-weight:700;color:#007bff}
+.stat-card .number{font-family:'Montserrat','Heebo',sans-serif;font-size:32px;font-weight:700;color:#8145FC}
 .stat-card .label{font-size:13px;color:#888;margin-top:4px}
 table{width:100%;border-collapse:collapse;font-size:14px}
 th{text-align:left;padding:10px 12px;background:#f0f4f8;color:#555;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
@@ -217,12 +220,12 @@ tr:hover td{background:#fafbfc}
 .badge-inactive{background:#fce4ec;color:#c62828}
 .form-group{margin-bottom:16px}
 .form-group label{display:block;font-size:14px;font-weight:600;color:#333;margin-bottom:6px}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;font-size:15px;font-family:'Rubik',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.1)}
-.btn{display:inline-block;padding:10px 20px;background:#007bff;color:#fff;font-family:'Rubik',sans-serif;font-size:15px;font-weight:600;border:none;border-radius:8px;cursor:pointer;text-decoration:none}
-.btn:hover{background:#0069d9}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;font-size:15px;font-family:'Heebo',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#8145FC;box-shadow:0 0 0 3px rgba(129,69,252,.1)}
+.btn{display:inline-block;padding:10px 20px;background:#8145FC;color:#fff;font-family:'Heebo',sans-serif;font-size:15px;font-weight:600;border:none;border-radius:8px;cursor:pointer;text-decoration:none}
+.btn:hover{background:#391991}
 .btn-sm{padding:6px 14px;font-size:13px}
-.btn-outline{background:#fff;color:#007bff;border:1.5px solid #007bff}
+.btn-outline{background:#fff;color:#8145FC;border:1.5px solid #8145FC}
 .btn-danger{background:#c62828;color:#fff}
 .btn-danger:hover{background:#a51b1b}
 .login-wrap{max-width:360px;margin:80px auto;text-align:center}
@@ -232,19 +235,19 @@ tr:hover td{background:#fafbfc}
 .qr-wrap canvas{margin:0 auto}
 .qr-actions{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
 .upload-zone{border:2px dashed #ccc;border-radius:12px;padding:40px 20px;text-align:center;color:#888;cursor:pointer;transition:border-color .2s,background .2s}
-.upload-zone:hover,.upload-zone.dragover{border-color:#007bff;background:#e8f4ff;color:#007bff}
+.upload-zone:hover,.upload-zone.dragover{border-color:#8145FC;background:#F0E8FF;color:#8145FC}
 .upload-zone input{display:none}
 .upload-progress{margin-top:12px}
 .progress-bar{height:6px;background:#e0e0e0;border-radius:3px;overflow:hidden}
-.progress-bar-fill{height:100%;background:#007bff;transition:width .3s}
+.progress-bar-fill{height:100%;background:#8145FC;transition:width .3s}
 .lead-list{display:flex;flex-direction:column;gap:12px}
 .lead-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .lead-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
 .lead-name{font-size:16px}
-.lead-phone{display:block;color:#007bff;font-size:15px;font-weight:600;text-decoration:none;margin-bottom:4px}
+.lead-phone{display:block;color:#8145FC;font-size:15px;font-weight:600;text-decoration:none;margin-bottom:4px}
 .lead-note{font-size:14px;color:#555;margin:8px 0;line-height:1.4}
 .lead-meta{display:flex;justify-content:space-between;font-size:13px;color:#888;margin:8px 0}
-.lead-meta a{color:#007bff}
+.lead-meta a{color:#8145FC}
 .lead-actions{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
 .hidden{display:none}
 .text-muted{color:#888;font-size:13px}

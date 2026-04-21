@@ -28,7 +28,7 @@ app.onError((err, c) => {
       <h1 style="font-family:'Montserrat',sans-serif;font-size:48px;color:#32373c;margin-bottom:8px">500</h1>
       <h2 style="font-family:'Montserrat',sans-serif;font-size:20px;color:#555;margin-bottom:16px">Something went wrong</h2>
       <p style="color:#888;margin-bottom:24px">We hit an unexpected error. Please try again in a moment.</p>
-      <a href="/" style="display:inline-block;padding:12px 24px;background:#007bff;color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Go Home</a>
+      <a href="/" style="display:inline-block;padding:12px 24px;background:#8145FC;color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Go Home</a>
     </div>
   `), 500);
 });
@@ -75,7 +75,7 @@ app.notFound((c) => {
       <h1 style="font-family:'Montserrat',sans-serif;font-size:48px;color:#32373c;margin-bottom:8px">404</h1>
       <h2 style="font-family:'Montserrat',sans-serif;font-size:20px;color:#555;margin-bottom:16px">Page not found</h2>
       <p style="color:#888;margin-bottom:24px">The page you're looking for doesn't exist or has been moved.</p>
-      <a href="/" style="display:inline-block;padding:12px 24px;background:#007bff;color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Go Home</a>
+      <a href="/" style="display:inline-block;padding:12px 24px;background:#8145FC;color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Go Home</a>
     </div>
   `), 404);
 });

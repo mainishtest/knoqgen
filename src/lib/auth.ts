@@ -45,23 +45,23 @@ function loginPage(error?: string): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Team Login</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    body { font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
            background: #f5f7fa; display: flex; align-items: center; justify-content: center;
            min-height: 100vh; padding: 20px; }
     .card { background: white; border-radius: 12px; padding: 40px; max-width: 380px;
             width: 100%; box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; }
-    h1 { font-family: 'Montserrat', 'Rubik', sans-serif; font-size: 22px; color: #32373c; margin-bottom: 4px; }
+    h1 { font-family: 'Montserrat', 'Heebo', sans-serif; font-size: 22px; color: #32373c; margin-bottom: 4px; }
     p.sub { font-size: 14px; color: #888; margin-bottom: 24px; }
     input { width: 100%; padding: 12px 16px; border: 1.5px solid #ddd; border-radius: 8px;
-            font-size: 16px; font-family: 'Rubik', sans-serif; margin-bottom: 16px; }
-    input:focus { outline: none; border-color: #007bff; box-shadow: 0 0 0 3px rgba(0,123,255,0.1); }
-    button { width: 100%; padding: 14px; background: #007bff; color: white; border: none;
-             border-radius: 8px; font-size: 16px; font-weight: 600; font-family: 'Rubik', sans-serif; cursor: pointer; }
-    button:hover { background: #0069d9; }
+            font-size: 16px; font-family: 'Heebo', sans-serif; margin-bottom: 16px; }
+    input:focus { outline: none; border-color: #8145FC; box-shadow: 0 0 0 3px rgba(129,69,252,0.1); }
+    button { width: 100%; padding: 14px; background: #8145FC; color: white; border: none;
+             border-radius: 8px; font-size: 16px; font-weight: 600; font-family: 'Heebo', sans-serif; cursor: pointer; }
+    button:hover { background: #391991; }
     .error { color: #c62828; font-size: 14px; margin-bottom: 16px; }
   </style>
 </head>

@@ -230,7 +230,7 @@ async function sendTrialEmails(
   // 1) Notify the team
   const notifyHtml = `
     <div style="font-family:-apple-system,Segoe UI,sans-serif;max-width:520px">
-      <h2 style="color:#007bff;margin:0 0 12px">New Free Trial Signup</h2>
+      <h2 style="color:#8145FC;margin:0 0 12px">New Free Trial Signup</h2>
       <table style="width:100%;border-collapse:collapse;font-size:14px">
         <tr><td style="padding:6px 0;color:#888;width:100px">Name</td><td><strong>${esc(payload.name)}</strong></td></tr>
         <tr><td style="padding:6px 0;color:#888">Company</td><td><strong>${esc(payload.company)}</strong></td></tr>
@@ -253,7 +253,7 @@ async function sendTrialEmails(
   // 2) Welcome email to the prospect
   const welcomeHtml = `
     <div style="font-family:-apple-system,Segoe UI,sans-serif;max-width:520px;color:#333">
-      <h2 style="color:#007bff;margin:0 0 12px">Welcome to KnoqGen, ${esc(payload.name)}!</h2>
+      <h2 style="color:#8145FC;margin:0 0 12px">Welcome to KnoqGen, ${esc(payload.name)}!</h2>
       <p>Your 14-day free trial is on its way. Here's what happens next:</p>
       <ol style="line-height:1.7;padding-left:20px">
         <li>I'll personally send you a login link within the next business day.</li>
@@ -299,7 +299,7 @@ async function sendIntakePacket(
 
   const html = `
     <div style="font-family:-apple-system,Segoe UI,sans-serif;max-width:640px;color:#333;line-height:1.5">
-      <h2 style="color:#007bff;margin:0 0 8px">Trial intake completed</h2>
+      <h2 style="color:#8145FC;margin:0 0 8px">Trial intake completed</h2>
       <p style="color:#888;margin:0 0 20px">From <strong>${esc(row.name)}</strong> at <strong>${esc(row.company)}</strong> &middot; <a href="mailto:${esc(row.email)}">${esc(row.email)}</a></p>
 
       <h3 style="margin:18px 0 6px;font-size:15px">Company</h3>
@@ -398,17 +398,17 @@ function trialPage(): string {
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://knoqgen.com/og-card.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>${TRIAL_CSS}</style>
 </head>
 <body>
 
 <header class="tr-header">
   <div class="tr-container">
-    <a href="/sell" class="tr-logo"><img src="/api/video/static/logo.png" alt="KnoqGen" style="height:34px;width:auto"></a>
+    <a href="/sell" class="tr-logo"><img src="/logo.png" alt="KnoqGen" style="height:34px;width:auto"></a>
     <a href="/sell" class="tr-nav-link">&larr; Back</a>
   </div>
 </header>
@@ -636,13 +636,13 @@ function trialSuccessPage(): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Account Created &mdash; KnoqGen</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:#f5f7fa;color:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    body{font-family:'Heebo',sans-serif;background:#f5f7fa;color:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
     .card{background:#fff;border-radius:16px;padding:48px 32px;max-width:520px;width:100%;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.08)}
     .check{width:72px;height:72px;background:#e8f5e9;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
     h1{font-size:26px;font-weight:800;margin-bottom:8px;color:#2e7d32}
@@ -654,12 +654,12 @@ function trialSuccessPage(): string {
     .steps{text-align:left;margin:24px 0;background:#f8f9fa;border-radius:12px;padding:20px}
     .step{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #eee}
     .step:last-child{border-bottom:none}
-    .step-n{width:28px;height:28px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
+    .step-n{width:28px;height:28px;background:#8145FC;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
     .step strong{font-size:14px;display:block;margin-bottom:2px;color:#111}
     .step p{font-size:13px;color:#888;margin:0;line-height:1.5}
-    .btn-primary{display:inline-block;padding:16px 40px;background:#007bff;color:#fff;font-size:16px;font-weight:700;border-radius:8px;text-decoration:none;margin-top:24px;transition:background .2s}
-    .btn-primary:hover{background:#0069d9}
-    .btn-secondary{display:inline-block;padding:10px 24px;color:#007bff;font-size:14px;font-weight:600;text-decoration:none;margin-top:12px}
+    .btn-primary{display:inline-block;padding:16px 40px;background:#8145FC;color:#fff;font-size:16px;font-weight:700;border-radius:8px;text-decoration:none;margin-top:24px;transition:background .2s}
+    .btn-primary:hover{background:#391991}
+    .btn-secondary{display:inline-block;padding:10px 24px;color:#8145FC;font-size:14px;font-weight:600;text-decoration:none;margin-top:12px}
     .btn-secondary:hover{text-decoration:underline}
     .fine{font-size:13px;color:#aaa;margin-top:20px;line-height:1.5}
   </style>
@@ -713,7 +713,7 @@ function trialSuccessPage(): string {
 
 const TRIAL_CSS = `
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;background:#f5f7fa;-webkit-font-smoothing:antialiased;line-height:1.45}
+body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a1a1a;background:#f5f7fa;-webkit-font-smoothing:antialiased;line-height:1.45}
 .tr-container{max-width:1080px;margin:0 auto;padding:0 20px}
 
 /* Header */
@@ -721,7 +721,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .tr-header .tr-container{display:flex;justify-content:space-between;align-items:center}
 .tr-logo{display:flex;align-items:center;text-decoration:none}
 .tr-nav-link{color:#555;text-decoration:none;font-size:14px;font-weight:600}
-.tr-nav-link:hover{color:#007bff}
+.tr-nav-link:hover{color:#8145FC}
 
 /* Main */
 .tr-main{padding:40px 0 56px}
@@ -736,7 +736,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 .tr-checks{list-style:none;margin:0 0 28px;padding:0}
 .tr-checks li{display:flex;gap:10px;padding:9px 0;font-size:15px;color:#333;line-height:1.5}
-.tr-checks li span{flex-shrink:0;width:22px;height:22px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:2px}
+.tr-checks li span{flex-shrink:0;width:22px;height:22px;background:#8145FC;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:2px}
 .tr-checks strong{color:#111}
 
 .tr-preview{background:#fff;border-radius:16px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:center}
@@ -752,14 +752,14 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 .tr-field{margin-bottom:14px}
 .tr-field label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:5px}
-.tr-field input,.tr-field select{width:100%;padding:12px;font-size:16px;font-family:'Inter',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
+.tr-field input,.tr-field select{width:100%;padding:12px;font-size:16px;font-family:'Heebo',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
 .tr-field select{appearance:none;background:#fff url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23888' d='M6 8L0 0h12z'/%3e%3c/svg%3e") right 14px center no-repeat;padding-right:34px}
-.tr-field input:focus,.tr-field select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.1)}
+.tr-field input:focus,.tr-field select:focus{outline:none;border-color:#8145FC;box-shadow:0 0 0 3px rgba(129,69,252,.1)}
 .tr-opt{color:#aaa;font-weight:400;font-size:12px}
 
-.tr-btn{display:block;width:100%;padding:16px;background:#007bff;color:#fff;font-size:16px;font-weight:700;font-family:'Inter',sans-serif;border:none;border-radius:10px;cursor:pointer;margin-top:8px;transition:background .15s}
-.tr-btn:hover{background:#0069d9}
-.tr-btn:disabled{background:#80bdff;cursor:not-allowed}
+.tr-btn{display:block;width:100%;padding:16px;background:#8145FC;color:#fff;font-size:16px;font-weight:700;font-family:'Heebo',sans-serif;border:none;border-radius:10px;cursor:pointer;margin-top:8px;transition:background .15s}
+.tr-btn:hover{background:#391991}
+.tr-btn:disabled{background:#C6ADFF;cursor:not-allowed}
 .tr-fine{text-align:center;font-size:12px;color:#888;margin-top:10px}
 .tr-error{margin-top:12px;padding:10px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;color:#b91c1c;font-size:13px}
 
@@ -772,11 +772,11 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* Footer */
 .tr-footer{padding:24px 0;text-align:center;font-size:12px;color:#aaa}
 .tr-footer a{color:#888;text-decoration:none;margin:0 4px}
-.tr-footer a:hover{color:#007bff}
+.tr-footer a:hover{color:#8145FC}
 
 /* Leave-Behind System upsell */
 .tr-bundle-wrap{margin:18px 0 4px;border:2px solid #e2e8f0;border-radius:14px;overflow:hidden;transition:border-color .2s,box-shadow .2s;background:#fff}
-.tr-bundle-wrap:has(#bundleCheck:checked){border-color:#007bff;box-shadow:0 0 0 4px rgba(0,123,255,.1)}
+.tr-bundle-wrap:has(#bundleCheck:checked){border-color:#8145FC;box-shadow:0 0 0 4px rgba(129,69,252,.1)}
 .tr-bundle-header{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#fff}
 .tr-bundle-badge{font-size:11px;font-weight:700;letter-spacing:.08em;color:#fbbf24;text-transform:uppercase}
 .tr-bundle-price-tag{font-size:22px;font-weight:800;color:#fff}
@@ -791,15 +791,15 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .tr-bundle-list li::before{content:"✓";position:absolute;left:0;color:#16a34a;font-weight:700}
 .tr-bundle-roi{font-size:12px;color:#0369a1;font-weight:600;background:#e0f2fe;padding:4px 10px;border-radius:20px;display:inline-block}
 .tr-bundle-cta-row{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#f0f9ff;border-top:1px solid #bae6fd;cursor:pointer}
-.tr-bundle-cta-row input[type=checkbox]{width:20px;height:20px;flex-shrink:0;accent-color:#007bff;cursor:pointer}
+.tr-bundle-cta-row input[type=checkbox]{width:20px;height:20px;flex-shrink:0;accent-color:#8145FC;cursor:pointer}
 .tr-bundle-cta-text{font-size:14px;font-weight:700;color:#0c4a6e;line-height:1.3}
 .tr-bundle-qty{display:flex;align-items:center;gap:12px;padding:10px 14px;border-top:1px solid #dde6f5;background:#f8faff}
 .tr-bundle-qty-label{font-size:13px;font-weight:600;color:#333;white-space:nowrap}
 .tr-qty-controls{display:flex;align-items:center}
 .tr-qty-controls button{width:30px;height:30px;border:1.5px solid #ccc;background:#fff;font-size:18px;font-weight:700;cursor:pointer;border-radius:6px;line-height:1;color:#333;transition:border-color .1s}
-.tr-qty-controls button:hover{border-color:#007bff;color:#007bff}
+.tr-qty-controls button:hover{border-color:#8145FC;color:#8145FC}
 .tr-qty-controls span{min-width:36px;text-align:center;font-size:16px;font-weight:700;color:#111}
-.tr-bundle-total{font-size:15px;font-weight:700;color:#007bff;margin-left:auto}
+.tr-bundle-total{font-size:15px;font-weight:700;color:#8145FC;margin-left:auto}
 .tr-bundle-ships-note{font-size:11px;color:#888;text-align:center;padding:8px;border-top:1px solid #f0f0f0;background:#fafafa}
 `;
 
@@ -815,17 +815,17 @@ function trialSetupPage(id: string, name: string, company: string): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finish Setup &mdash; KnoqGen</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/api/video/static/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>${TRIAL_CSS}${SETUP_CSS}</style>
 </head>
 <body>
 
 <header class="tr-header">
   <div class="tr-container">
-    <a href="/sell" class="tr-logo"><img src="/api/video/static/logo.png" alt="KnoqGen" style="height:34px;width:auto"></a>
+    <a href="/sell" class="tr-logo"><img src="/logo.png" alt="KnoqGen" style="height:34px;width:auto"></a>
     <span class="tr-nav-link" style="color:#2e7d32">Step 2 of 2</span>
   </div>
 </header>
@@ -833,7 +833,7 @@ function trialSetupPage(id: string, name: string, company: string): string {
 <main class="tr-main">
   <div class="tr-container" style="max-width:780px">
     <div class="setup-intro">
-      <h1>Welcome, ${safeName}! Let's set up <span style="color:#007bff">${safeCompany}</span>.</h1>
+      <h1>Welcome, ${safeName}! Let's set up <span style="color:#8145FC">${safeCompany}</span>.</h1>
       <p class="setup-lede">About 3 minutes. Everything you enter here goes straight to our setup team &mdash; no phone calls, no back-and-forth. We'll build your account and email your login within one business day.</p>
     </div>
 
@@ -878,7 +878,7 @@ function trialSetupPage(id: string, name: string, company: string): string {
         <div class="setup-field">
           <label for="primary_color">Brand color <span class="opt">(optional)</span></label>
           <div style="display:flex;gap:10px;align-items:center">
-            <input id="primary_color" name="primary_color" type="color" value="#007bff" style="width:52px;height:42px;padding:2px;border-radius:8px">
+            <input id="primary_color" name="primary_color" type="color" value="#8145FC" style="width:52px;height:42px;padding:2px;border-radius:8px">
             <span class="hint" style="margin:0">We'll use this for buttons &amp; accents on your pages.</span>
           </div>
         </div>
@@ -1166,8 +1166,8 @@ const SETUP_CSS = `
 .setup-field{margin-bottom:14px}
 .setup-field:last-child{margin-bottom:0}
 .setup-field label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:5px}
-.setup-field input[type=text],.setup-field input[type=tel],.setup-field input[type=email],.setup-field input[type=url],.setup-field textarea,.setup-field select{width:100%;padding:11px 12px;font-size:15px;font-family:'Inter',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
-.setup-field input:focus,.setup-field textarea:focus,.setup-field select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.1)}
+.setup-field input[type=text],.setup-field input[type=tel],.setup-field input[type=email],.setup-field input[type=url],.setup-field textarea,.setup-field select{width:100%;padding:11px 12px;font-size:15px;font-family:'Heebo',sans-serif;border:1.5px solid #ddd;border-radius:8px;background:#fff;-webkit-appearance:none}
+.setup-field input:focus,.setup-field textarea:focus,.setup-field select:focus{outline:none;border-color:#8145FC;box-shadow:0 0 0 3px rgba(129,69,252,.1)}
 .setup-field textarea{resize:vertical;min-height:70px;line-height:1.5}
 .setup-field .hint{display:block;margin-top:5px;font-size:12px;color:#999;line-height:1.4}
 .setup-field .req{color:#dc2626;font-weight:700}
@@ -1180,13 +1180,13 @@ const SETUP_CSS = `
 .chip{position:relative;cursor:pointer}
 .chip input{position:absolute;opacity:0;pointer-events:none}
 .chip span{display:inline-block;padding:7px 14px;border:1.5px solid #ddd;border-radius:20px;font-size:13px;color:#555;background:#fff;transition:all .15s;user-select:none}
-.chip:hover span{border-color:#007bff}
-.chip input:checked + span{background:#e8f4ff;border-color:#007bff;color:#007bff;font-weight:600}
+.chip:hover span{border-color:#8145FC}
+.chip input:checked + span{background:#F0E8FF;border-color:#8145FC;color:#8145FC;font-weight:600}
 
 /* File uploader */
 .uploader{border:1.5px dashed #ccc;border-radius:10px;padding:14px;background:#fafbfc}
-.upload-btn{padding:8px 16px;background:#fff;color:#007bff;font-size:13px;font-weight:600;border:1.5px solid #007bff;border-radius:8px;cursor:pointer;font-family:'Inter',sans-serif}
-.upload-btn:hover{background:#e8f4ff}
+.upload-btn{padding:8px 16px;background:#fff;color:#8145FC;font-size:13px;font-weight:600;border:1.5px solid #8145FC;border-radius:8px;cursor:pointer;font-family:'Heebo',sans-serif}
+.upload-btn:hover{background:#F0E8FF}
 .upload-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
 .upload-list:empty{display:none}
 .upload-row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;padding:6px 10px;background:#fff;border:1px solid #eee;border-radius:6px}
@@ -1199,9 +1199,9 @@ const SETUP_CSS = `
 .video-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
 @media(max-width:560px){.video-options{grid-template-columns:1fr}}
 .video-option{display:flex;gap:10px;padding:14px;border:1.5px solid #ddd;border-radius:10px;cursor:pointer;transition:all .15s}
-.video-option:hover{border-color:#007bff}
+.video-option:hover{border-color:#8145FC}
 .video-option input{flex-shrink:0;margin-top:3px}
-.video-option:has(input:checked){border-color:#007bff;background:#f0f7ff}
+.video-option:has(input:checked){border-color:#8145FC;background:#f0f7ff}
 .vo-body{display:flex;flex-direction:column;gap:2px;font-size:13px}
 .vo-body strong{color:#111;font-weight:700}
 .vo-body span{color:#777}

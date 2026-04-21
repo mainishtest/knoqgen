@@ -80,7 +80,7 @@ landing.get("/v/:slug", async (c) => {
   const companyName = page.org_display_name;
   const companyPhone = page.org_phone || c.env.COMPANY_PHONE;
   const companyTagline = page.org_tagline || c.env.COMPANY_TAGLINE;
-  const brandColor = page.org_brand_color || "#007bff";
+  const brandColor = page.org_brand_color || "#8145FC";
 
   // If the org has a verified custom landing domain and this request is not on it,
   // redirect to the canonical URL. Skip during trial/shared domain.

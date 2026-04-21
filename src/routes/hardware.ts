@@ -123,14 +123,14 @@ function orderPage(opts: {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complete Your Order &mdash; Leave-Behind System</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/api/video/static/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://js.stripe.com/v3/"></script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:#f0f4f8;color:#1a1a1a;min-height:100vh}
-    a{color:#007bff;text-decoration:none}
+    body{font-family:'Heebo',sans-serif;background:#f0f4f8;color:#1a1a1a;min-height:100vh}
+    a{color:#8145FC;text-decoration:none}
     a:hover{text-decoration:underline}
 
     /* Header */
@@ -150,7 +150,7 @@ function orderPage(opts: {
     .hw-hero{position:relative;background:#0f172a;overflow:hidden}
     .hw-hero-img{width:100%;display:block;max-height:480px;object-fit:cover;object-position:center center}
     .hw-hero-overlay{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,transparent 100%)}
-    .hw-hero-tag{display:inline-block;background:#007bff;color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;padding:3px 8px;border-radius:4px;margin-bottom:6px}
+    .hw-hero-tag{display:inline-block;background:#8145FC;color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;padding:3px 8px;border-radius:4px;margin-bottom:6px}
     .hw-hero-title{font-size:20px;font-weight:900;color:#fff;line-height:1.2}
     .hw-hero-sub{font-size:13px;color:rgba(255,255,255,.75);margin-top:4px}
 
@@ -200,12 +200,12 @@ function orderPage(opts: {
     .hw-section-label{font-size:10px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:18px 0 10px}
     .hw-field{margin-bottom:14px}
     .hw-field label{display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:5px}
-    .hw-field input,.hw-field select{width:100%;padding:11px 13px;font-size:15px;font-family:'Inter',sans-serif;border:1.5px solid #d1d5db;border-radius:8px;background:#fff;color:#111;transition:border-color .15s,box-shadow .15s}
-    .hw-field input:focus,.hw-field select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.12)}
+    .hw-field input,.hw-field select{width:100%;padding:11px 13px;font-size:15px;font-family:'Heebo',sans-serif;border:1.5px solid #d1d5db;border-radius:8px;background:#fff;color:#111;transition:border-color .15s,box-shadow .15s}
+    .hw-field input:focus,.hw-field select:focus{outline:none;border-color:#8145FC;box-shadow:0 0 0 3px rgba(129,69,252,.12)}
     .hw-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .hw-row-3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
     #payment-element{border:1.5px solid #d1d5db;border-radius:8px;padding:12px;margin-top:4px;background:#fff}
-    .hw-btn{display:block;width:100%;padding:17px;background:linear-gradient(135deg,#007bff,#0056b3);color:#fff;font-size:16px;font-weight:800;font-family:'Inter',sans-serif;border:none;border-radius:10px;cursor:pointer;margin-top:20px;transition:opacity .15s,transform .1s;text-align:center;letter-spacing:.01em}
+    .hw-btn{display:block;width:100%;padding:17px;background:linear-gradient(135deg,#8145FC,#0056b3);color:#fff;font-size:16px;font-weight:800;font-family:'Heebo',sans-serif;border:none;border-radius:10px;cursor:pointer;margin-top:20px;transition:opacity .15s,transform .1s;text-align:center;letter-spacing:.01em}
     .hw-btn:hover{opacity:.93}
     .hw-btn:active{transform:scale(.99)}
     .hw-btn:disabled{background:#93c5fd;cursor:not-allowed;transform:none}
@@ -220,7 +220,7 @@ function orderPage(opts: {
 <body>
 
 <header class="hw-header">
-  <a href="/sell"><img src="/api/video/static/logo.png" alt="KnoqGen" class="hw-logo" onerror="this.style.display='none'"></a>
+  <a href="/sell"><img src="/logo.png" alt="KnoqGen" class="hw-logo" onerror="this.style.display='none'"></a>
   <div class="hw-secure">
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
     256-bit SSL encrypted checkout
@@ -373,7 +373,7 @@ function orderPage(opts: {
     </form>
 
     <div id="loadingMsg" class="hw-loading">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.5" style="animation:spin 1s linear infinite;margin-bottom:8px"><circle cx="12" cy="12" r="10" stroke-opacity=".25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="1"/></svg><br>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8145FC" stroke-width="2.5" style="animation:spin 1s linear infinite;margin-bottom:8px"><circle cx="12" cy="12" r="10" stroke-opacity=".25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="1"/></svg><br>
       Processing your payment…
     </div>
   </div>

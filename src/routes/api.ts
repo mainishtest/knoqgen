@@ -762,13 +762,13 @@ async function sendLeadNotification(
       <p style="color:#888;font-size:14px;margin-bottom:20px">Someone scanned your QR code.</p>
       <table style="width:100%;border-collapse:collapse;font-size:15px">
         <tr><td style="padding:8px 0;color:#888;width:120px">Name</td><td style="padding:8px 0;font-weight:600">${lead.name}</td></tr>
-        <tr><td style="padding:8px 0;color:#888">Phone</td><td><a href="tel:${lead.phone}" style="color:#007bff;font-weight:600">${lead.phone}</a></td></tr>
+        <tr><td style="padding:8px 0;color:#888">Phone</td><td><a href="tel:${lead.phone}" style="color:#8145FC;font-weight:600">${lead.phone}</a></td></tr>
         ${lead.email ? `<tr><td style="padding:8px 0;color:#888">Email</td><td>${lead.email}</td></tr>` : ""}
         ${lead.project_note ? `<tr><td style="padding:8px 0;color:#888">Project</td><td>${lead.project_note}</td></tr>` : ""}
         <tr><td style="padding:8px 0;color:#888">Source</td><td>${lead.streetName}${lead.repName ? ` (${lead.repName})` : ""}</td></tr>
       </table>
       <div style="margin-top:20px">
-        <a href="tel:${lead.phone}" style="display:inline-block;padding:10px 24px;background:#007bff;color:#fff;text-decoration:none;border-radius:6px;font-weight:600">Call ${lead.name.split(' ')[0]} Now</a>
+        <a href="tel:${lead.phone}" style="display:inline-block;padding:10px 24px;background:#8145FC;color:#fff;text-decoration:none;border-radius:6px;font-weight:600">Call ${lead.name.split(' ')[0]} Now</a>
       </div>
       <p style="margin-top:20px;font-size:13px;color:#888">${org.display_name} &middot; <a href="${orgBaseUrl(org.slug, env.SITE_URL)}/admin/leads">View all leads</a></p>
     </div>`;

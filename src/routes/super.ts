@@ -331,7 +331,7 @@ sup.post("/super/provision/:id", async (c) => {
     <p>Hi${ownerName ? " " + esc(ownerName) : ""},</p>
     <p>Your KnoqGen trial for <strong>${esc(displayName)}</strong> is ready.</p>
     <p>Click below to set your password and get started. Your trial runs for ${trialDays} days.</p>
-    <p><a href="${inviteUrl}" style="background:#007bff;color:#fff;padding:12px 20px;text-decoration:none;border-radius:8px;display:inline-block">Accept invite & set password</a></p>
+    <p><a href="${inviteUrl}" style="background:#8145FC;color:#fff;padding:12px 20px;text-decoration:none;border-radius:8px;display:inline-block">Accept invite & set password</a></p>
     <p>Or copy this link: ${inviteUrl}</p>
   `;
   c.executionCtx.waitUntil(
@@ -452,7 +452,7 @@ sup.get("/super/orders", async (c) => {
 
   const statuses = ["pending", "processing", "shipped", "delivered", "canceled"];
   const filterTabs = statuses.map(s =>
-    `<a href="/super/orders?status=${s}" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;${statusFilter === s ? "background:#007bff;color:#fff" : "background:#f0f0f0;color:#555"}">${s}</a>`
+    `<a href="/super/orders?status=${s}" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;${statusFilter === s ? "background:#8145FC;color:#fff" : "background:#f0f0f0;color:#555"}">${s}</a>`
   ).join("");
 
   return c.html(adminLayout("Hardware Orders", `
@@ -462,7 +462,7 @@ sup.get("/super/orders", async (c) => {
       <span style="font-size:13px;color:#888">${orders.length} order${orders.length !== 1 ? "s" : ""}</span>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
-      <a href="/super/orders" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;${!statusFilter ? "background:#007bff;color:#fff" : "background:#f0f0f0;color:#555"}">All</a>
+      <a href="/super/orders" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;${!statusFilter ? "background:#8145FC;color:#fff" : "background:#f0f0f0;color:#555"}">All</a>
       ${filterTabs}
     </div>
     <div class="card" style="overflow-x:auto"><table>

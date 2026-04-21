@@ -116,7 +116,7 @@ admin.get("/admin", async (c) => {
     <style>
     .pipeline{display:flex;align-items:center;justify-content:center;gap:4px;padding:8px 0}
     .pipe-stage{text-align:center;flex:1}
-    .pipe-num{font-family:'Montserrat','Inter',sans-serif;font-size:28px;font-weight:800}
+    .pipe-num{font-family:'Montserrat','Heebo',sans-serif;font-size:28px;font-weight:800}
     .pipe-label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.5px}
     .pipe-arrow{color:#ccc;font-size:18px;padding:0 2px}
     </style>
@@ -342,7 +342,7 @@ admin.get("/admin/settings", requireOwner, async (c) => {
           </div>
           <input type="hidden" id="logoKey" name="logo_key" value="${esc(orgBranding.logo_key || "")}">
         </div>
-        <div class="form-group"><label>Brand Color</label><input type="color" name="brand_color" value="${esc(orgBranding.brand_color || "#007bff")}" style="width:60px;height:36px;padding:2px;border:1.5px solid #ddd;border-radius:6px;cursor:pointer"></div>
+        <div class="form-group"><label>Brand Color</label><input type="color" name="brand_color" value="${esc(orgBranding.brand_color || "#8145FC")}" style="width:60px;height:36px;padding:2px;border:1.5px solid #ddd;border-radius:6px;cursor:pointer"></div>
         <div class="form-group"><label>Tagline</label><input type="text" name="tagline" value="${esc(orgBranding.tagline || "")}" placeholder="e.g. "></div>
         <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" value="${esc(orgBranding.phone || "")}" placeholder="(208) 555-1234"></div>
         <div class="form-group"><label>Website</label><input type="url" name="website" value="${esc(orgBranding.website || "")}" placeholder="https://yourcompany.com"></div>
@@ -655,7 +655,7 @@ admin.get("/admin/analytics", async (c) => {
     <div class="card">
       <h2 style="margin-top:0">Weekly Trend</h2>
       <div class="trend-legend">
-        <span><span class="dot" style="background:#007bff"></span> Scans</span>
+        <span><span class="dot" style="background:#8145FC"></span> Scans</span>
         <span><span class="dot" style="background:#2e7d32"></span> Leads</span>
       </div>
       <div class="trend-chart">${trendBars}</div>
@@ -702,7 +702,7 @@ admin.get("/admin/analytics", async (c) => {
     .trend-bar-group{flex:1;display:flex;flex-direction:column;align-items:center}
     .trend-bars{display:flex;gap:3px;align-items:flex-end;height:100px;width:100%}
     .trend-bar{flex:1;border-radius:3px 3px 0 0;min-height:2px;transition:height .3s}
-    .scan-bar{background:#007bff}
+    .scan-bar{background:#8145FC}
     .lead-bar{background:#2e7d32}
     .trend-label{font-size:10px;color:#888;margin-top:4px;white-space:nowrap}
     .trend-legend{display:flex;gap:16px;margin-bottom:12px;font-size:12px;color:#666}

@@ -143,7 +143,7 @@ function salesPage(): string {
 <!-- ═══ NAV ═══ -->
 <nav class="sales-nav">
   <div class="container" style="display:flex;justify-content:space-between;align-items:center">
-    <a href="/sell" style="display:flex;align-items:center;text-decoration:none"><img src="/logo.png" alt="KnoqGen" style="height:40px;width:auto"></a>
+    <a href="/sell" style="display:flex;align-items:center;text-decoration:none"><img src="/logo.png" alt="KnoqGen" style="height:64px;width:auto"></a>
     <a href="/login" class="nav-login">Log In</a>
   </div>
 </nav>

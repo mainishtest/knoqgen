@@ -233,18 +233,18 @@ function salesPage(): string {
 <!-- ═══════════════════════════════════════════════════════ -->
 <section class="section section-dark">
   <div class="container">
-    <div class="eyebrow" style="color:rgba(255,255,255,.5)">The Fix</div>
-    <h2 style="color:#fff">KnoqGen Changes What Happens<br>After the Knock</h2>
-    <p class="section-text" style="color:rgba(255,255,255,.75)">Instead of leaving a boring hanger&hellip;</p>
-    <p class="section-text" style="color:#fff"><strong>Your rep leaves a personalized video message right on the door.</strong></p>
-    <p class="section-text" style="color:rgba(255,255,255,.75)">Now when the homeowner comes back?</p>
-    <p class="section-text" style="color:rgba(255,255,255,.75)">They don't see junk mail.</p>
+    <div class="eyebrow">The Fix</div>
+    <h2 style="color:#111">KnoqGen Changes What Happens<br>After the Knock</h2>
+    <p class="section-text" style="color:#444">Instead of leaving a boring hanger&hellip;</p>
+    <p class="section-text" style="color:#111"><strong>Your rep leaves a personalized video message right on the door.</strong></p>
+    <p class="section-text" style="color:#444">Now when the homeowner comes back?</p>
+    <p class="section-text" style="color:#444">They don't see junk mail.</p>
     <div class="fix-points">
       <p>They see a <strong>real person</strong></p>
       <p>A <strong>real message</strong></p>
       <p>From someone <strong>already working in their neighborhood</strong></p>
     </div>
-    <p class="section-text" style="color:#fff;margin-top:24px"><strong>And they can request a quote instantly.</strong></p>
+    <p class="section-text" style="color:#111;margin-top:24px"><strong>And they can request a quote instantly.</strong></p>
 
     <!-- Full landing page screenshot, dark-section framed -->
     <div class="page-preview-dark">
@@ -407,7 +407,7 @@ function salesPage(): string {
       </div>
     </div>
 
-    <p style="color:rgba(255,255,255,.8);text-align:center;margin-top:24px;font-size:18px"><strong style="color:#fff">The tool costs $199/month.</strong> One job pays for an entire year.</p>
+    <p style="color:rgba(255,255,255,.85);text-align:center;margin-top:24px;font-size:18px"><strong style="color:#fff">The tool costs $199/month.</strong> One job pays for an entire year.</p>
   </div>
 </section>
 
@@ -471,8 +471,8 @@ function salesPage(): string {
 <!-- ═══════════════════════════════════════════════════════ -->
 <section class="section section-dark" id="pricing">
   <div class="container">
-    <h2 style="color:#fff">Simple Pricing. No Surprises.</h2>
-    <p class="section-sub" style="color:rgba(255,255,255,.5)">Everything included. No per-scan fees. No hidden costs. No contracts.</p>
+    <h2 style="color:#111">Simple Pricing. No Surprises.</h2>
+    <p class="section-sub" style="color:#777">Everything included. No per-scan fees. No hidden costs. No contracts.</p>
 
     <!-- Screenshot: leads view on dashboard — reinforces the payoff right before the pricing cards -->
     <figure class="product-shot product-shot-dark">
@@ -509,13 +509,13 @@ function salesPage(): string {
           <li>$400/yr per additional rep</li>
         </ul>
         <a href="/checkout?plan=annual" class="btn-price btn-price-best">Lock In Annual &mdash; Save $398 &rarr;</a>
-        <p class="price-note" style="color:rgba(255,255,255,.5)">Or <a href="/trial" style="color:rgba(255,255,255,.85);text-decoration:underline">start with a free trial</a> and switch to annual anytime</p>
+        <p class="price-note" style="color:#777">Or <a href="/trial" style="color:rgba(0,0,0,.85);text-decoration:underline">start with a free trial</a> and switch to annual anytime</p>
       </div>
     </div>
 
     <!-- Industry-specific ROI anchoring -->
     <div class="roi-box">
-      <p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;font-weight:600">What one extra job is worth to you</p>
+      <p style="font-size:15px;color:#777;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;font-weight:600">What one extra job is worth to you</p>
       <div class="roi-grid">
         <div class="roi-item">
           <div class="roi-amount">$3K&ndash;$8K</div>
@@ -576,10 +576,10 @@ function salesPage(): string {
   <div class="container">
     <img src="/logo.png" alt="KnoqGen" style="height:48px;width:auto;margin-bottom:8px">
     <p>Turn missed doors into booked jobs.</p>
-    <p style="margin-top:12px;font-size:14px"><a href="mailto:hello@knoqgen.com" style="color:rgba(255,255,255,.7)">hello@knoqgen.com</a></p>
+    <p style="margin-top:12px;font-size:14px"><a href="mailto:hello@knoqgen.com" style="color:#555">hello@knoqgen.com</a></p>
     <div style="margin-top:12px;display:flex;gap:16px;justify-content:center;font-size:12px">
-      <a href="/privacy" style="color:rgba(255,255,255,.4)">Privacy Policy</a>
-      <a href="/terms" style="color:rgba(255,255,255,.4)">Terms of Service</a>
+      <a href="/privacy" style="color:#999">Privacy Policy</a>
+      <a href="/terms" style="color:#999">Terms of Service</a>
     </div>
     <p style="margin-top:8px;font-size:12px;color:#888">&copy; 2026 KnoqGen. All rights reserved.</p>
   </div>
@@ -595,36 +595,36 @@ body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .container{max-width:720px;margin:0 auto;padding:0 20px}
 
 /* ── Nav ── */
-.sales-nav{background:#111;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.nav-login{color:rgba(255,255,255,.7);font-size:14px;font-weight:600;text-decoration:none;padding:6px 16px;border:1.5px solid rgba(255,255,255,.2);border-radius:6px;transition:border-color .2s,color .2s}
-.nav-login:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+.sales-nav{background:#fff;padding:14px 0;border-bottom:1px solid #f5f5f5}
+.nav-login{color:#555;font-size:14px;font-weight:600;text-decoration:none;padding:6px 16px;border:1.5px solid #ddd;border-radius:6px;transition:border-color .2s,color .2s}
+.nav-login:hover{color:#111;border-color:#777}
 
 /* ── Hero ── */
-.hero{background:#111;color:#fff;padding:60px 0 48px;text-align:center}
-.eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.45);margin-bottom:20px}
+.hero{background:#fff;color:#111;padding:60px 0 48px;text-align:center}
+.eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#8145FC;margin-bottom:20px}
 .hero h1{font-size:36px;font-weight:900;line-height:1.15;margin-bottom:20px;letter-spacing:-0.5px}
 @media(max-width:600px){.hero h1{font-size:28px}}
-.hero-sub{font-size:18px;color:rgba(255,255,255,.7);line-height:1.5;margin-bottom:12px;max-width:560px;margin-left:auto;margin-right:auto}
-.hero-sub strong{color:#fff}
+.hero-sub{font-size:18px;color:#555;line-height:1.5;margin-bottom:12px;max-width:560px;margin-left:auto;margin-right:auto}
+.hero-sub strong{color:#111}
 .hero-steps{margin:24px auto;max-width:360px;text-align:left}
-.hero-steps p{font-size:17px;color:#fff;padding:6px 0;font-weight:500}
+.hero-steps p{font-size:17px;color:#111;padding:6px 0;font-weight:500}
 .hero-steps p:before{content:"\\1F449 ";margin-right:4px}
 .hero-buttons{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:24px}
 .btn-cta{display:inline-block;padding:16px 32px;background:#8145FC;color:#fff;font-size:17px;font-weight:700;border-radius:8px;text-decoration:none;transition:background .2s}
 .btn-cta:hover{background:#391991}
 .btn-cta-big{font-size:19px;padding:18px 40px}
-.btn-cta-outline{display:inline-block;padding:14px 28px;background:transparent;color:#fff;font-size:16px;font-weight:600;border:2px solid rgba(255,255,255,.3);border-radius:8px;text-decoration:none;transition:border-color .2s}
-.btn-cta-outline:hover{border-color:rgba(255,255,255,.6)}
-.hero-highlight{color:#5bb8ff}
-.hero-proof{display:flex;gap:1px;margin:28px auto 0;max-width:480px;background:rgba(255,255,255,.1);border-radius:10px;overflow:hidden}
-.hero-proof-item{flex:1;text-align:center;padding:14px 8px;background:rgba(255,255,255,.04)}
-.hero-proof-item strong{display:block;font-size:17px;color:#fff;margin-bottom:2px}
-.hero-proof-item span{font-size:12px;color:rgba(255,255,255,.5)}
-.hero-note{font-size:14px;color:rgba(255,255,255,.35);margin-top:16px}
+.btn-cta-outline{display:inline-block;padding:14px 28px;background:transparent;color:#111;font-size:16px;font-weight:600;border:2px solid #bbb;border-radius:8px;text-decoration:none;transition:border-color .2s}
+.btn-cta-outline:hover{border-color:#666}
+.hero-highlight{color:#8145FC}
+.hero-proof{display:flex;gap:1px;margin:28px auto 0;max-width:480px;background:#f0f0f0;border-radius:10px;overflow:hidden}
+.hero-proof-item{flex:1;text-align:center;padding:14px 8px;background:#fafafa}
+.hero-proof-item strong{display:block;font-size:17px;color:#111;margin-bottom:2px}
+.hero-proof-item span{font-size:12px;color:#777}
+.hero-note{font-size:14px;color:#a0a0a0;margin-top:16px}
 
 /* ── Sections ── */
 .section{padding:56px 0}
-.section-dark{background:#111;color:#fff}
+.section-dark{background:#fff;color:#111}
 .section-blue{background:#8145FC}
 .section h2{font-size:28px;font-weight:800;line-height:1.2;margin-bottom:16px;letter-spacing:-0.3px}
 @media(max-width:600px){.section h2{font-size:22px}}
@@ -646,9 +646,9 @@ body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 /* ── Fix section ── */
 .fix-points{margin:20px auto;max-width:420px;text-align:left}
-.fix-points p{font-size:18px;color:rgba(255,255,255,.7);padding:6px 0}
+.fix-points p{font-size:18px;color:#555;padding:6px 0}
 .fix-points p:before{content:"\\1F449 ";margin-right:4px}
-.fix-points p strong{color:#fff}
+.fix-points p strong{color:#111}
 
 /* ── Before/After contrast ── */
 .contrast-block{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:24px 0 0;border-radius:12px;overflow:hidden}
@@ -678,12 +678,12 @@ body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 .check-list li:before{content:"\\2713 ";color:#2e7d32;font-weight:700;margin-right:8px}
 
 /* ── Math block ── */
-.math-block{background:rgba(255,255,255,.08);border-radius:12px;padding:24px;max-width:480px;margin:24px auto 0}
-.math-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-size:16px;color:rgba(255,255,255,.8)}
-.math-row strong{color:#fff}
+.math-block{background:#f5f5f5;border-radius:12px;padding:24px;max-width:480px;margin:24px auto 0}
+.math-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-size:16px;color:#333}
+.math-row strong{color:#111}
 .math-row .red{color:#ef5350}
 .math-row .green{color:#66bb6a}
-.math-divider{height:1px;background:rgba(255,255,255,.15);margin:8px 0}
+.math-divider{height:1px;background:#e5e5e5;margin:8px 0}
 
 /* ── Industry chips ── */
 .industry-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
@@ -698,29 +698,29 @@ body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 /* ── Pricing ── */
 .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
 @media(max-width:600px){.pricing-grid{grid-template-columns:1fr}}
-.price-card{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:16px;padding:28px;text-align:center}
+.price-card{background:#fafafa;border:1.5px solid #eaeaea;border-radius:16px;padding:28px;text-align:center}
 .price-card-best{background:rgba(129,69,252,.15);border-color:#8145FC;position:relative;padding-top:36px}
 .price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#8145FC;color:#fff;font-size:13px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
-.price-label{font-size:14px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
-.price-amount{font-size:48px;font-weight:900;color:#fff;margin-bottom:4px}
-.price-amount span{font-size:20px;font-weight:500;color:rgba(255,255,255,.5)}
+.price-label{font-size:14px;font-weight:600;color:#777;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.price-amount{font-size:48px;font-weight:900;color:#111;margin-bottom:4px}
+.price-amount span{font-size:20px;font-weight:500;color:#777}
 .price-savings{font-size:14px;color:#66bb6a;font-weight:600;margin-bottom:16px}
 .price-features{list-style:none;text-align:left;margin-bottom:20px}
-.price-features li{padding:6px 0;font-size:14px;color:rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,.06)}
+.price-features li{padding:6px 0;font-size:14px;color:#555;border-bottom:1px solid #fafafa}
 .price-features li:before{content:"\\2713 ";color:#66bb6a;font-weight:700;margin-right:6px}
-.btn-price{display:block;padding:14px;background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s}
-.btn-price:hover{background:rgba(255,255,255,.15)}
-.btn-price-best{background:#8145FC;border-color:#8145FC}
+.btn-price{display:block;padding:14px;background:#f0f0f0;color:#111;border:1.5px solid #ddd;border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s}
+.btn-price:hover{background:#e5e5e5}
+.btn-price-best{background:#8145FC;border-color:#8145FC;color:#fff}
 .btn-price-best:hover{background:#391991}
-.price-note{font-size:12px;color:rgba(255,255,255,.35);margin-top:12px}
-.roi-box{background:rgba(255,255,255,.06);border-radius:12px;padding:24px;margin-top:32px;text-align:center;font-size:16px;color:rgba(255,255,255,.8);line-height:1.6}
-.roi-box strong{color:#fff}
-.roi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin:16px 0;background:rgba(255,255,255,.08);border-radius:8px;overflow:hidden}
+.price-note{font-size:12px;color:#a0a0a0;margin-top:12px}
+.roi-box{background:#fafafa;border-radius:12px;padding:24px;margin-top:32px;text-align:center;font-size:16px;color:#333;line-height:1.6}
+.roi-box strong{color:#111}
+.roi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin:16px 0;background:#f5f5f5;border-radius:8px;overflow:hidden}
 @media(max-width:600px){.roi-grid{grid-template-columns:1fr 1fr}}
-.roi-item{text-align:center;padding:16px 8px;background:rgba(255,255,255,.03)}
+.roi-item{text-align:center;padding:16px 8px;background:#fafafa}
 .roi-amount{font-size:20px;font-weight:800;color:#66bb6a}
-.roi-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px}
-.roi-bottom{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);text-align:center;color:rgba(255,255,255,.8)}
+.roi-label{font-size:12px;color:#777;margin-top:4px}
+.roi-bottom{margin-top:16px;padding-top:16px;border-top:1px solid #f0f0f0;text-align:center;color:#333}
 
 /* ── Guarantee ── */
 .guarantee-box{max-width:400px;margin:32px auto 0;background:#f8f9fa;border-radius:12px;padding:24px;text-align:left}
@@ -741,28 +741,28 @@ body{font-family:'Heebo',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 /* ── Phone mockup (hero) ── */
 .phone-preview{margin:40px auto 0;max-width:360px;text-align:center}
-.phone-frame{display:inline-block;padding:10px;background:linear-gradient(160deg,#2b2f36,#0c0f14);border-radius:38px;box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 0 0 1.5px rgba(255,255,255,.06)}
+.phone-frame{display:inline-block;padding:10px;background:linear-gradient(160deg,#2b2f36,#0c0f14);border-radius:38px;box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 0 0 1.5px #fafafa}
 .phone-frame img{display:block;width:260px;height:auto;border-radius:28px;background:#fff}
 @media(max-width:380px){.phone-frame img{width:220px}}
-.phone-caption{margin-top:14px;font-size:13px;color:rgba(255,255,255,.55);line-height:1.5;max-width:300px;margin-left:auto;margin-right:auto}
+.phone-caption{margin-top:14px;font-size:13px;color:#666;line-height:1.5;max-width:300px;margin-left:auto;margin-right:auto}
 
 /* ── Dark-section full page preview ── */
 .page-preview-dark{margin:32px auto 0;max-width:360px;text-align:center}
-.page-preview-dark figure{margin:0;padding:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px}
+.page-preview-dark figure{margin:0;padding:10px;background:#fafafa;border:1px solid #f5f5f5;border-radius:18px}
 .page-preview-dark img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
-.page-preview-dark figcaption{margin-top:12px;font-size:13px;color:rgba(255,255,255,.55);line-height:1.5}
+.page-preview-dark figcaption{margin-top:12px;font-size:13px;color:#666;line-height:1.5}
 
 /* ── Product shot (dashboard mockups) ── */
 .product-shot{margin:32px auto 0;max-width:780px;text-align:center}
 .product-shot img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 12px 32px rgba(15,23,42,.12);border:1px solid #e5e7eb;background:#fff}
 .product-shot figcaption{margin-top:12px;font-size:13px;color:#6b7280;line-height:1.5}
-.product-shot-dark img{border:1px solid rgba(255,255,255,.1);box-shadow:0 12px 32px rgba(0,0,0,.4)}
-.product-shot-dark figcaption{color:rgba(255,255,255,.55)}
+.product-shot-dark img{border:1px solid #f0f0f0;box-shadow:0 12px 32px rgba(0,0,0,.4)}
+.product-shot-dark figcaption{color:#666}
 
 /* ── Footer ── */
-.sales-footer{background:#111;color:#fff;padding:32px 0;text-align:center;font-size:14px}
+.sales-footer{background:#fff;color:#111;padding:32px 0;text-align:center;font-size:14px}
 .sales-footer strong{font-size:16px}
-.sales-footer p{color:rgba(255,255,255,.5);margin-top:4px}
+.sales-footer p{color:#777;margin-top:4px}
 `;
 
 export default sales;

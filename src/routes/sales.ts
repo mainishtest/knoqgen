@@ -59,9 +59,9 @@ sales.get("/terms", (c) => {
 
     <h2>Subscriptions &amp; Billing</h2>
     <ul>
-      <li>Monthly plan: $99/month, includes 3 sales rep accounts</li>
-      <li>Annual plan: $990/year, includes 3 sales rep accounts</li>
-      <li>Additional reps: $20/month per rep</li>
+      <li>Monthly plan: $199/month, includes 3 sales rep accounts</li>
+      <li>Annual plan: $1,990/year, includes 3 sales rep accounts</li>
+      <li>Additional reps: $40/month per rep on the monthly plan, $400/year per rep on the annual plan</li>
       <li>All payments are processed by Stripe</li>
       <li>You may cancel at any time — no long-term contracts</li>
       <li>Refunds are handled on a case-by-case basis</li>
@@ -407,7 +407,7 @@ function salesPage(): string {
       </div>
     </div>
 
-    <p style="color:rgba(255,255,255,.8);text-align:center;margin-top:24px;font-size:18px"><strong style="color:#fff">The tool costs $99/month.</strong> One job pays for an entire year.</p>
+    <p style="color:rgba(255,255,255,.8);text-align:center;margin-top:24px;font-size:18px"><strong style="color:#fff">The tool costs $199/month.</strong> One job pays for an entire year.</p>
   </div>
 </section>
 
@@ -483,7 +483,7 @@ function salesPage(): string {
     <div class="pricing-grid">
       <div class="price-card">
         <div class="price-label">Monthly</div>
-        <div class="price-amount">$99<span>/mo</span></div>
+        <div class="price-amount">$199<span>/mo</span></div>
         <ul class="price-features">
           <li>Up to 3 sales reps included</li>
           <li>Unlimited landing pages</li>
@@ -491,24 +491,24 @@ function salesPage(): string {
           <li>QR code generation + printing</li>
           <li>Lead notifications by email</li>
           <li>Admin dashboard + analytics</li>
-          <li>$20/mo per additional rep</li>
+          <li>$40/mo per additional rep</li>
         </ul>
         <a href="/trial" class="btn-price">Start Free Trial &rarr;</a>
-        <p class="price-note">14 days free &middot; No credit card &middot; Then $99/mo</p>
+        <p class="price-note">14 days free &middot; No credit card &middot; Then $199/mo</p>
       </div>
 
       <div class="price-card price-card-best">
         <div class="price-badge">Best Value &mdash; 2 Months Free</div>
         <div class="price-label">Annual</div>
-        <div class="price-amount">$990<span>/yr</span></div>
-        <div class="price-savings">That's $82.50/mo &mdash; save $198/year</div>
+        <div class="price-amount">$1,990<span>/yr</span></div>
+        <div class="price-savings">That's $165.83/mo &mdash; save $398/year</div>
         <ul class="price-features">
           <li>Everything in Monthly</li>
           <li>Up to 3 sales reps included</li>
           <li>Priority support</li>
-          <li>$20/mo per additional rep</li>
+          <li>$400/yr per additional rep</li>
         </ul>
-        <a href="/checkout?plan=annual" class="btn-price btn-price-best">Lock In Annual &mdash; Save $198 &rarr;</a>
+        <a href="/checkout?plan=annual" class="btn-price btn-price-best">Lock In Annual &mdash; Save $398 &rarr;</a>
         <p class="price-note" style="color:rgba(255,255,255,.5)">Or <a href="/trial" style="color:rgba(255,255,255,.85);text-decoration:underline">start with a free trial</a> and switch to annual anytime</p>
       </div>
     </div>
@@ -535,7 +535,7 @@ function salesPage(): string {
         </div>
       </div>
       <div class="roi-bottom">
-        <p>KnoqGen costs <strong>$99/month.</strong></p>
+        <p>KnoqGen costs <strong>$199/month.</strong></p>
         <p style="font-size:20px;margin-top:4px"><strong>One job pays for 1&ndash;10 years of the tool.</strong></p>
       </div>
     </div>

@@ -87,9 +87,9 @@ function checkoutPage(): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Start KnoqGen &mdash; Checkout</title>
-  <meta name="description" content="Get your team set up with KnoqGen. $99/mo, includes 3 reps. Turn missed doors into leads starting today.">
+  <meta name="description" content="Get your team set up with KnoqGen. $199/mo, includes 3 reps. Turn missed doors into leads starting today.">
   <meta property="og:title" content="Start KnoqGen &mdash; Checkout">
-  <meta property="og:description" content="$99/mo, includes 3 reps. Turn missed doors into leads starting today.">
+  <meta property="og:description" content="$199/mo, includes 3 reps. Turn missed doors into leads starting today.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://knoqgen.com/og-card.png">
   <meta property="og:image:width" content="1200">
@@ -151,9 +151,9 @@ function checkoutPage(): string {
               <div class="plan-badge">Best Value &mdash; Save 2 Months</div>
               <div class="plan-top">
                 <div class="plan-name">Annual</div>
-                <div class="plan-price">$990<span>/yr</span></div>
+                <div class="plan-price">$1,990<span>/yr</span></div>
               </div>
-              <div class="plan-detail">That's $82.50/mo &mdash; <strong>save $198</strong></div>
+              <div class="plan-detail">That's $165.83/mo &mdash; <strong>save $398</strong></div>
               <div class="plan-includes">Includes 3 reps &middot; Unlimited pages &middot; All features</div>
             </label>
 
@@ -162,7 +162,7 @@ function checkoutPage(): string {
               <input type="radio" name="plan" value="monthly">
               <div class="plan-top">
                 <div class="plan-name">Monthly</div>
-                <div class="plan-price">$99<span>/mo</span></div>
+                <div class="plan-price">$199<span>/mo</span></div>
               </div>
               <div class="plan-detail">Flexible &mdash; cancel anytime</div>
               <div class="plan-includes">Includes 3 reps &middot; Unlimited pages &middot; All features</div>
@@ -173,7 +173,7 @@ function checkoutPage(): string {
           <div class="addon-row">
             <div>
               <strong>Need more than 3 reps?</strong>
-              <p class="addon-sub">$20/mo per additional rep. You can add more anytime from your dashboard.</p>
+              <p class="addon-sub">$40/mo per additional rep on the monthly plan, $400/yr on the annual plan. You can add more anytime from your dashboard.</p>
             </div>
             <div class="addon-stepper">
               <button type="button" class="stepper-btn" id="repMinus">&minus;</button>
@@ -219,7 +219,7 @@ function checkoutPage(): string {
 
             <button type="submit" class="btn-checkout" id="submitBtn">
               <span id="btnText">Continue to Payment</span>
-              <span id="btnPrice">&mdash; <span id="btnTotal">$990</span></span>
+              <span id="btnPrice">&mdash; <span id="btnTotal">$1,990</span></span>
             </button>
 
             <div class="post-btn-trust">
@@ -240,7 +240,7 @@ function checkoutPage(): string {
           <h3>Order Summary</h3>
           <div class="summary-line">
             <span id="summaryPlan">Annual Plan</span>
-            <strong id="summaryPlanPrice">$990/yr</strong>
+            <strong id="summaryPlanPrice">$1,990/yr</strong>
           </div>
           <div class="summary-line" id="summaryRepsRow" style="display:none">
             <span id="summaryRepsLabel">Extra reps (0)</span>
@@ -249,7 +249,7 @@ function checkoutPage(): string {
           <div class="summary-divider"></div>
           <div class="summary-line summary-total">
             <span>Due today</span>
-            <strong id="summaryTotal">$990</strong>
+            <strong id="summaryTotal">$1,990</strong>
           </div>
 
           <div class="summary-includes">
@@ -312,7 +312,7 @@ function checkoutPage(): string {
           </div>
           <div class="mfaq">
             <strong>Can I add reps later?</strong>
-            <p>Yes. Add or remove reps anytime from your dashboard. $20/mo each.</p>
+            <p>Yes. Add or remove reps anytime from your dashboard. $40/mo each on the monthly plan ($400/yr on annual).</p>
           </div>
           <div class="mfaq">
             <strong>Do I need to change my current process?</strong>
@@ -320,7 +320,7 @@ function checkoutPage(): string {
           </div>
           <div class="mfaq">
             <strong>What if this only gets me one extra job?</strong>
-            <p>Then it already paid for itself. One paint job is $3K+. One roof is $8K+. This costs $99/mo.</p>
+            <p>Then it already paid for itself. One paint job is $3K+. One roof is $8K+. This costs $199/mo.</p>
           </div>
         </div>
       </div>
@@ -403,20 +403,20 @@ function checkoutPage(): string {
     var baseName, basePrice, baseDisplay;
     if(isAnnual){
       baseName = 'Annual Plan';
-      basePrice = 990;
-      baseDisplay = '$990/yr';
+      basePrice = 1990;
+      baseDisplay = '$1,990/yr';
     } else {
       baseName = 'Monthly Plan';
-      basePrice = 99;
-      baseDisplay = '$99/mo';
+      basePrice = 199;
+      baseDisplay = '$199/mo';
     }
 
     document.getElementById('summaryPlan').textContent = baseName;
     document.getElementById('summaryPlanPrice').textContent = baseDisplay;
 
     var repsRow = document.getElementById('summaryRepsRow');
-    var repsCost = repCount * 20;
-    if(isAnnual) repsCost = repCount * 20 * 12; // annual reps
+    var repsCost = repCount * 40;            // monthly: $40/mo per extra rep
+    if(isAnnual) repsCost = repCount * 400;  // annual:  $400/yr per extra rep
 
     if(repCount > 0){
       repsRow.style.display = 'flex';

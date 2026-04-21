@@ -518,7 +518,7 @@ function trialPage(): string {
         <div class="tr-trust">
           <div><strong>14 days free</strong><span>Full access, no CC</span></div>
           <div><strong>10 min setup</strong><span>Record, print, drop</span></div>
-          <div><strong>$99/mo after</strong><span>Only if you love it</span></div>
+          <div><strong>$199/mo after</strong><span>Only if you love it</span></div>
         </div>
       </aside>
     </div>

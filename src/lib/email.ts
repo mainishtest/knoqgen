@@ -5,7 +5,7 @@
 import type { Env } from "./db";
 
 const SHARED_SENDING_DOMAIN = "leads.knoqgen.com";
-const PLATFORM_SENDING_DOMAIN = "estimate.knoqgen.com"; // for platform→user emails (trial onboarding)
+const PLATFORM_SENDING_DOMAIN = "leads.knoqgen.com"; // for platform→user emails (trial onboarding)
 
 export type OrgForEmail = {
   slug: string;

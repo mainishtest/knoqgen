@@ -199,7 +199,7 @@ trial.get("/api/trial/diagnose", (c) => {
     resend_key_prefix: c.env.RESEND_API_KEY ? c.env.RESEND_API_KEY.slice(0, 6) + "…" : null,
     notify_email_env: c.env.NOTIFY_EMAIL || null,
     trial_notify_to: "hello@knoqgen.com",
-    from_domain: "estimate.knoqgen.com",
+    from_domain: "leads.knoqgen.com",
     note: "The from-domain must be verified in Resend. If has_resend_key is false, set it: npx wrangler secret put RESEND_API_KEY",
   });
 });
@@ -243,7 +243,7 @@ async function sendTrialEmails(
     </div>`;
 
   const notify = await sendResend(env.RESEND_API_KEY, {
-    from: "KnoqGen <hello@estimate.knoqgen.com>",
+    from: "KnoqGen <hello@leads.knoqgen.com>",
     to: [TRIAL_NOTIFY],
     reply_to: payload.email,
     subject: `New Free Trial — ${payload.company}`,
@@ -265,7 +265,7 @@ async function sendTrialEmails(
     </div>`;
 
   const welcome = await sendResend(env.RESEND_API_KEY, {
-    from: "David at KnoqGen <hello@estimate.knoqgen.com>",
+    from: "David at KnoqGen <hello@leads.knoqgen.com>",
     to: [payload.email],
     reply_to: TRIAL_NOTIFY,
     subject: "Your KnoqGen free trial is ready",
@@ -337,7 +337,7 @@ async function sendIntakePacket(
     </div>`;
 
   await sendResend(env.RESEND_API_KEY, {
-    from: "KnoqGen <hello@estimate.knoqgen.com>",
+    from: "KnoqGen <hello@leads.knoqgen.com>",
     to: ["hello@knoqgen.com"],
     reply_to: row.email,
     subject: `Intake complete — ${row.company}`,

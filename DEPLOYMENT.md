@@ -59,9 +59,9 @@ Set these with `wrangler secret put <NAME>`:
 1. In Resend, verify `leads.knoqgen.com` as a sending domain. Add the
    required SPF, DKIM, and DMARC records to the `knoqgen.com` zone in
    Cloudflare DNS.
-2. Confirm `estimate.knoqgen.com` is still verified (existing 1st
+2. Confirm `leads.knoqgen.com` is still verified (existing 1st
    Choice Painting senders keep working).
-3. Platform onboarding emails also send from `estimate.knoqgen.com`
+3. Platform onboarding emails also send from `leads.knoqgen.com`
    (`sendPlatformEmail`) — leave as is.
 
 ## 4. Cloudflare for SaaS
@@ -115,7 +115,7 @@ npx wrangler deploy
 ## 8. Smoke test
 
 1. Sign up a new trial org at `/signup`. Verify:
-   - Welcome email arrives from `hello@estimate.knoqgen.com`
+   - Welcome email arrives from `hello@leads.knoqgen.com`
    - `organizations.status = 'trial'` with 14-day `trial_ends_at`
    - Owner membership created, user can log in
 2. As a trial user, create a landing page. Verify `expires_at = now() + 14d`

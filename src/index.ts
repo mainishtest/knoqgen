@@ -37,6 +37,9 @@ app.onError((err, c) => {
 app.get("/", async (c) => {
   const s = await resolveSession(c);
   if (s && s.org) return c.redirect("/rep");
+  // Super-admins without an active org belong in the super panel, not
+  // the "no org yet" onboarding screen.
+  if (s && !s.org && s.user?.is_super_admin) return c.redirect("/super");
   if (s && !s.org) return c.redirect("/onboarding/new-org");
   return c.redirect("/sell");
 });
